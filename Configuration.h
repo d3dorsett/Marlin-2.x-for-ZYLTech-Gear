@@ -535,8 +535,8 @@
  * heater. If your configuration is significantly different than this and you don't understand
  * the issues involved, don't use bed PID until someone else verifies that your hardware works.
  */
-// D3 Changed 02DEC2020 ZYLTech Gear v3 with MKS Robin Nano v1.2
-#define PIDTEMPBED
+
+//#define PIDTEMPBED
 
 //#define BED_LIMIT_SWITCHING
 
