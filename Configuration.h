@@ -776,9 +776,9 @@
  * Override with M203
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-// D3 Changed 02DEC2020 ZYLTech Gear v3 with MKS Robin Nano v1.2
+// D3 Changed 17DEC2020 ZYLTech Gear v3 with MKS Robin Nano v1.2
 //#define DEFAULT_MAX_FEEDRATE          { 300, 300, 5, 25 }
-#define DEFAULT_MAX_FEEDRATE           { 250, 250, 10, 50 }
+#define DEFAULT_MAX_FEEDRATE           { 300, 300, 4, 70 }
 
 //#define LIMITED_MAX_FR_EDITING        // Limit edit via M203 or LCD to DEFAULT_MAX_FEEDRATE * 2
 #if ENABLED(LIMITED_MAX_FR_EDITING)
@@ -791,7 +791,9 @@
  * Override with M201
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_MAX_ACCELERATION      { 3000, 3000, 100, 10000 }
+// D3 Changed 17DEC2020 ZYLTech Gear v3 with MKS Robin Nano v1.2 (slow down for stability)
+//#define DEFAULT_MAX_ACCELERATION      { 3000, 3000, 100, 10000 }
+#define DEFAULT_MAX_ACCELERATION      { 1500, 1500, 100, 10000 }
 
 //#define LIMITED_MAX_ACCEL_EDITING     // Limit edit via M201 or LCD to DEFAULT_MAX_ACCELERATION * 2
 #if ENABLED(LIMITED_MAX_ACCEL_EDITING)
@@ -823,7 +825,7 @@
  * When changing speed and direction, if the difference is less than the
  * value set here, it may happen instantaneously.
  */
-// D3 Changed 04DEC2020 ZYLTech Gear v3 with MKS Robin Nano v1.2
+// D3 Enabled 04DEC2020 ZYLTech Gear v3 with MKS Robin Nano v1.2
 #define CLASSIC_JERK
 #if ENABLED(CLASSIC_JERK)
   #define DEFAULT_XJERK 10.0

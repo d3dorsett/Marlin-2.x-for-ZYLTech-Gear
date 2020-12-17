@@ -1661,7 +1661,9 @@
 #define LIN_ADVANCE
 #if ENABLED(LIN_ADVANCE)
   //#define EXTRA_LIN_ADVANCE_K // Enable for second linear advance constants
-  #define LIN_ADVANCE_K 0.22    // Unit: mm compression per 1mm/s extruder speed
+  // D3 Changed 02DEC2020 ZYLTech Gear v3 with MKS Robin Nano v1.2
+  //#define LIN_ADVANCE_K 0.22    // Unit: mm compression per 1mm/s extruder speed
+  #define LIN_ADVANCE_K 0.44    // Unit: mm compression per 1mm/s extruder speed
   //#define LA_DEBUG            // If enabled, this will generate debug information output over USB.
   // D3 Enabled 02DEC2020 ZYLTech Gear v3 with MKS Robin Nano v1.2
   #define EXPERIMENTAL_SCURVE // Enable this option to permit S-Curve Acceleration
